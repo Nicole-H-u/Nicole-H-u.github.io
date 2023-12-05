@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>PCIe基础</title>
+      <link href="/2023/12/05/PCIe%E5%9F%BA%E7%A1%80/"/>
+      <url>/2023/12/05/PCIe%E5%9F%BA%E7%A1%80/</url>
+      
+        <content type="html"><![CDATA[<h1 id="拓扑结构"><a href="#拓扑结构" class="headerlink" title="拓扑结构"></a>拓扑结构</h1><p><img src="/..%5Cpicture%5CPCIe%E5%9F%BA%E7%A1%80%5Cimage.png" alt="PCIe拓扑结构"></p><h3 id="1-Root-Complex-RC"><a href="#1-Root-Complex-RC" class="headerlink" title="1. Root Complex(RC)"></a>1. Root Complex(RC)</h3><p>(百度翻译为“根复合体”)<br>实现CPU与PCIE上组件通信的媒介，CPU要读取某个组件信息，告知RC，其它的均有RC代劳了。可以说是PCIE拓扑结构的中枢机构，是管家，是指挥者。其实协议对RC还有很多的规定且随着处理器不同而不同，本是一个模糊的概念，对于X86处理器RC除了管理PCIE设备还有其它事情要干，但在这里还是应该把它理解为PCIE总线控制器。</p><h3 id="2-Endpoints"><a href="#2-Endpoints" class="headerlink" title="2. Endpoints"></a>2. Endpoints</h3><p>Endpoints称之为端点或者说终点，RC的命令最终要去的地方就是这里。它要对RC的请求进行响应，并接收RC的配置。例如计算机里面的声卡、网卡，还有应用到PCIE的些功能设备，均是端点。</p><h3 id="3-Switch"><a href="#3-Switch" class="headerlink" title="3. Switch"></a>3. Switch</h3><h3 id="PCIe到PCI-PCI-X桥接器"><a href="#PCIe到PCI-PCI-X桥接器" class="headerlink" title="PCIe到PCI&#x2F;PCI-X桥接器"></a>PCIe到PCI&#x2F;PCI-X桥接器</h3>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>exp</title>
       <link href="/2023/12/05/exp/"/>
       <url>/2023/12/05/exp/</url>
